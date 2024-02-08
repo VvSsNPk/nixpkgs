@@ -34,7 +34,7 @@
 }:
 
 let
-  version = "9.1.21";
+  version = "9.2.0";
   packInstall = swiplPath: pack:
     ''${swiplPath}/bin/swipl -g "pack_install(${pack}, [package_directory(\"${swiplPath}/lib/swipl/pack\"), silent(true), interactive(false)])." -t "halt."
     '';
